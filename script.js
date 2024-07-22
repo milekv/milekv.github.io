@@ -1,14 +1,15 @@
 document.addEventListener('DOMContentLoaded', () => {
-   
+    
     anime({
         targets: '.animate-text',
-        opacity: 1,
-        translateY: 0,
+        opacity: [0, 1],
+        translateY: [20, 0],
         delay: anime.stagger(200),
         easing: 'easeOutQuad',
         duration: 1000
     });
 
+    
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
             e.preventDefault();
@@ -38,5 +39,12 @@ document.addEventListener('DOMContentLoaded', () => {
         card.style.transform = 'translateY(20px)';
         card.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
         observer.observe(card);
+    });
+
+    const menuToggle = document.querySelector('.menu-toggle');
+    const navUl = document.querySelector('nav ul');
+
+    menuToggle.addEventListener('click', () => {
+        navUl.classList.toggle('show');
     });
 });
