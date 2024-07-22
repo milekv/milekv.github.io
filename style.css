@@ -1,9 +1,10 @@
 :root {
-    --primary-color: #3498db;
+    --primary-color: #4a90e2;
     --secondary-color: #2c3e50;
+    --accent-color: #e74c3c;
     --text-color: #333;
     --bg-color: #f4f4f4;
-    --gradient-start: #3498db;
+    --gradient-start: #4a90e2;
     --gradient-end: #2c3e50;
 }
 
@@ -14,7 +15,7 @@
 }
 
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Roboto', sans-serif;
     line-height: 1.6;
     color: var(--text-color);
     background-color: var(--bg-color);
@@ -23,16 +24,15 @@ body {
 .container {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 2rem;
+    padding: 0 20px;
 }
+
 
 header {
     background-color: var(--secondary-color);
-    color: #fff;
-    padding: 1rem 0;
+    padding: 20px 0;
     position: fixed;
     width: 100%;
-    top: 0;
     z-index: 1000;
 }
 
@@ -43,80 +43,80 @@ nav {
 }
 
 .logo {
+    color: #fff;
     font-size: 1.5rem;
     font-weight: bold;
 }
 
-nav ul {
+.nav-links {
     display: flex;
     list-style: none;
 }
 
-nav ul li {
-    margin-left: 2rem;
+.nav-links li {
+    margin-left: 30px;
 }
 
-nav ul li a {
+.nav-links a {
     color: #fff;
     text-decoration: none;
-    font-weight: bold;
+    font-weight: 500;
     transition: color 0.3s ease;
 }
 
-nav ul li a:hover {
+.nav-links a:hover {
     color: var(--primary-color);
 }
 
-.menu-toggle {
+.burger {
     display: none;
-    font-size: 1.5rem;
     cursor: pointer;
 }
 
-.hero {
-    background: linear-gradient(135deg, var(--gradient-start), var(--gradient-end));
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    color: #fff;
+.burger div {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 5px;
+    transition: all 0.3s ease;
 }
 
-.hero h1 {
-    font-size: 4rem;
-    margin-bottom: 1rem;
+
+.hero {
+    background: linear-gradient(135deg, var(--gradient-start), var(--gradient-end));
+    color: #fff;
+    text-align: center;
+    padding: 150px 0 100px;
+}
+
+.hero h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
 }
 
 .hero p {
-    font-size: 1.5rem;
-    margin-bottom: 2rem;
+    font-size: 1.2rem;
+    margin-bottom: 30px;
 }
 
 .btn {
     display: inline-block;
-    background-color: var(--primary-color);
+    background-color: var(--accent-color);
     color: #fff;
-    padding: 0.8rem 2rem;
+    padding: 12px 24px;
     text-decoration: none;
     border-radius: 5px;
     transition: background-color 0.3s ease;
-    border: none;
-    cursor: pointer;
 }
 
 .btn:hover {
-    background-color: #2980b9;
+    background-color: #c0392b;
 }
 
-.about, .projects, .contact {
-    padding: 6rem 0;
-}
 
-h2 {
-    text-align: center;
-    margin-bottom: 3rem;
-    font-size: 2.5rem;
-    color: var(--secondary-color);
+.about {
+    padding: 100px 0;
+    background-color: #fff;
 }
 
 .about-content {
@@ -127,7 +127,7 @@ h2 {
 
 .about-text {
     flex: 1;
-    margin-right: 2rem;
+    margin-right: 50px;
 }
 
 .skills {
@@ -135,29 +135,34 @@ h2 {
 }
 
 .skills h3 {
-    margin-bottom: 1rem;
-    color: var(--secondary-color);
+    margin-bottom: 20px;
 }
 
 .skills ul {
-    list-style: none;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 1rem;
+    gap: 15px;
+    list-style: none;
 }
 
 .skills li {
     background-color: var(--primary-color);
     color: #fff;
-    padding: 0.5rem 1rem;
+    padding: 10px;
     border-radius: 5px;
     text-align: center;
+}
+
+
+.projects {
+    padding: 100px 0;
+    background-color: var(--bg-color);
 }
 
 .project-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
+    gap: 30px;
 }
 
 .project-card {
@@ -172,59 +177,66 @@ h2 {
     transform: translateY(-5px);
 }
 
-.project-image {
+.project-card img {
+    width: 100%;
     height: 200px;
-    background-size: cover;
-    background-position: center;
+    object-fit: cover;
 }
 
 .project-card h3 {
-    padding: 1.5rem 1.5rem 0.5rem;
+    padding: 20px 20px 10px;
     color: var(--secondary-color);
 }
 
 .project-card p {
-    padding: 0 1.5rem 1.5rem;
+    padding: 0 20px 20px;
 }
 
 .project-card .btn {
-    margin: 0 1.5rem 1.5rem;
+    margin: 0 20px 20px;
+}
+
+
+.contact {
+    padding: 100px 0;
+    background-color: #fff;
 }
 
 form {
-    display: flex;
-    flex-direction: column;
-    max-width: 500px;
+    max-width: 600px;
     margin: 0 auto;
 }
 
 input, textarea {
-    margin-bottom: 1rem;
-    padding: 0.8rem;
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
     border: 1px solid #ccc;
     border-radius: 5px;
-    font-size: 1rem;
+    font-size: 16px;
 }
 
 textarea {
-    min-height: 150px;
+    height: 150px;
+    resize: vertical;
 }
+
 
 footer {
     background-color: var(--secondary-color);
     color: #fff;
+    padding: 30px 0;
     text-align: center;
-    padding: 2rem 0;
 }
 
 .social-icons {
-    margin-top: 1rem;
+    margin-top: 20px;
 }
 
 .social-icons a {
     color: #fff;
-    font-size: 1.5rem;
-    margin: 0 0.5rem;
+    font-size: 24px;
+    margin: 0 10px;
     transition: color 0.3s ease;
 }
 
@@ -232,36 +244,28 @@ footer {
     color: var(--primary-color);
 }
 
-@media (max-width: 768px) {
-    nav ul {
-        display: none;
-        flex-direction: column;
+
+@media screen and (max-width: 768px) {
+    .nav-links {
         position: absolute;
-        top: 100%;
-        left: 0;
-        width: 100%;
+        right: 0px;
+        height: 92vh;
+        top: 8vh;
         background-color: var(--secondary-color);
-        padding: 1rem 0;
-    }
-
-    nav ul.show {
         display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 50%;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
     }
 
-    nav ul li {
-        margin: 0.5rem 0;
+    .nav-links li {
+        opacity: 0;
     }
 
-    .menu-toggle {
+    .burger {
         display: block;
-    }
-
-    .hero h1 {
-        font-size: 3rem;
-    }
-
-    .hero p {
-        font-size: 1.2rem;
     }
 
     .about-content {
@@ -270,6 +274,25 @@ footer {
 
     .about-text, .skills {
         margin-right: 0;
-        margin-bottom: 2rem;
+        margin-bottom: 30px;
+    }
+
+    .skills ul {
+        grid-template-columns: 1fr;
+    }
+}
+
+.nav-active {
+    transform: translateX(0%);
+}
+
+@keyframes navLinkFade {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0px);
     }
 }
