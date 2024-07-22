@@ -3,77 +3,114 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio - Milek V</title>
+    <title>Portfolio - Milekv</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
 </head>
 <body>
     <header>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">O mnie</a></li>
-                <li><a href="#projects">Projekty</a></li>
-                <li><a href="#contact">Kontakt</a></li>
-            </ul>
-        </nav>
+        <div class="container">
+            <nav>
+                <div class="logo">MV</div>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">O mnie</a></li>
+                    <li><a href="#projects">Projekty</a></li>
+                    <li><a href="#contact">Kontakt</a></li>
+                </ul>
+                <div class="menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </div>
     </header>
 
     <main>
         <section id="home" class="hero">
-            <h1 class="animate-text">Milek V</h1>
-            <p class="animate-text">Tester oprogramowania | Automatyzacja testów</p>
+            <div class="container">
+                <h1 class="animate-text">Milekv</h1>
+                <p class="animate-text">Tester oprogramowania | Automatyzacja testów</p>
+                <a href="#projects" class="btn animate-text">Zobacz projekty</a>
+            </div>
         </section>
 
         <section id="about" class="about">
-            <h2>O mnie</h2>
-            <p>Jestem pasjonatem testowania oprogramowania, specjalizującym się w automatyzacji testów. Moje projekty skupiają się na poprawie jakości aplikacji webowych.</p>
+            <div class="container">
+                <h2>O mnie</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>Jestem pasjonatem testowania oprogramowania, specjalizującym się w automatyzacji testów. Moje projekty skupiają się na poprawie jakości aplikacji webowych.</p>
+                        <p>Z doświadczeniem w różnych narzędziach i frameworkach, staram się ciągle rozwijać i podnosić swoje umiejętności w dziedzinie testowania.</p>
+                    </div>
+                    <div class="skills">
+                        <h3>Umiejętności</h3>
+                        <ul>
+                            <li>Selenium</li>
+                            <li>Python</li>
+                            <li>Java</li>
+                            <li>TestNG</li>
+                            <li>Cucumber</li>
+                            <li>Jenkins</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </section>
 
         <section id="projects" class="projects">
-            <h2>Moje projekty</h2>
-            <div class="project-grid">
-                <div class="project-card">
-                    <h3>Facebook Login Tests</h3>
-                    <p>Automatyzacja testów logowania do Facebooka.</p>
-                    <a href="https://github.com/milekv/facebook-login-tests" target="_blank" class="btn">Zobacz projekt</a>
-                </div>
-                <div class="project-card">
-                    <h3>UI Test Project</h3>
-                    <p>Projekt testów interfejsu użytkownika.</p>
-                    <a href="https://github.com/milekv/ui_test_project" target="_blank" class="btn">Zobacz projekt</a>
-                </div>
-                <div class="project-card">
-                    <h3>Advanced Web Application Testing</h3>
-                    <p>Zaawansowane testy aplikacji webowych.</p>
-                    <a href="https://github.com/milekv/Advanced-Web-Application-Testing" target="_blank" class="btn">Zobacz projekt</a>
-                </div>
-                <div class="project-card">
-                    <h3>Web Application Testing</h3>
-                    <p>Podstawowe testy aplikacji webowych.</p>
-                    <a href="https://github.com/milekv/Web-Application-Testing" target="_blank" class="btn">Zobacz projekt</a>
+            <div class="container">
+                <h2>Moje projekty</h2>
+                <div class="project-grid">
+                    <div class="project-card">
+                        <div class="project-image" style="background-image: url('https://source.unsplash.com/random/400x300?technology')"></div>
+                        <h3>Facebook Login Tests</h3>
+                        <p>Automatyzacja testów logowania do Facebooka.</p>
+                        <a href="https://github.com/milekv/facebook-login-tests" target="_blank" class="btn">Zobacz projekt</a>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-image" style="background-image: url('https://source.unsplash.com/random/400x300?code')"></div>
+                        <h3>UI Test Project</h3>
+                        <p>Projekt testów interfejsu użytkownika.</p>
+                        <a href="https://github.com/milekv/ui_test_project" target="_blank" class="btn">Zobacz projekt</a>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-image" style="background-image: url('https://source.unsplash.com/random/400x300?computer')"></div>
+                        <h3>Advanced Web Application Testing</h3>
+                        <p>Zaawansowane testy aplikacji webowych.</p>
+                        <a href="https://github.com/milekv/Advanced-Web-Application-Testing" target="_blank" class="btn">Zobacz projekt</a>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-image" style="background-image: url('https://source.unsplash.com/random/400x300?programming')"></div>
+                        <h3>Web Application Testing</h3>
+                        <p>Podstawowe testy aplikacji webowych.</p>
+                        <a href="https://github.com/milekv/Web-Application-Testing" target="_blank" class="btn">Zobacz projekt</a>
+                    </div>
                 </div>
             </div>
         </section>
 
         <section id="contact" class="contact">
-            <h2>Kontakt</h2>
-            <form>
-                <input type="text" placeholder="Imię" required>
-                <input type="email" placeholder="Email" required>
-                <textarea placeholder="Wiadomość" required></textarea>
-                <button type="submit" class="btn">Wyślij</button>
-            </form>
+            <div class="container">
+                <h2>Kontakt</h2>
+                <form>
+                    <input type="text" placeholder="Imię" required>
+                    <input type="email" placeholder="Email" required>
+                    <textarea placeholder="Wiadomość" required></textarea>
+                    <button type="submit" class="btn">Wyślij</button>
+                </form>
+            </div>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2024 Milekv. Wszystkie prawa zastrzeżone.</p>
-        <div class="social-icons">
-            <a href="#" target="_blank"><i class="fab fa-github"></i></a>
-            <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
-            <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+        <div class="container">
+            <p>&copy; 2023 Milek V. Wszystkie prawa zastrzeżone.</p>
+            <div class="social-icons">
+                <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+            </div>
         </div>
     </footer>
 
