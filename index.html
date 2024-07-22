@@ -3,35 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio - Milekv</title>
+    <title>Milekv - Portfolio Testera Oprogramowania</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <div class="container">
-            <nav>
-                <div class="logo">MV</div>
-                <ul>
+        <nav>
+            <div class="container">
+                <h1 class="logo">MV</h1>
+                <ul class="nav-links">
                     <li><a href="#home">Home</a></li>
                     <li><a href="#about">O mnie</a></li>
                     <li><a href="#projects">Projekty</a></li>
                     <li><a href="#contact">Kontakt</a></li>
                 </ul>
-                <div class="menu-toggle">
-                    <i class="fas fa-bars"></i>
+                <div class="burger">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
                 </div>
-            </nav>
-        </div>
+            </div>
+        </nav>
     </header>
 
     <main>
         <section id="home" class="hero">
             <div class="container">
-                <h1 class="animate-text">Milekv</h1>
-                <p class="animate-text">Tester oprogramowania | Automatyzacja testów</p>
-                <a href="#projects" class="btn animate-text">Zobacz projekty</a>
+                <h2>Milekv</h2>
+                <p>Tester Oprogramowania | Automatyzacja Testów</p>
+                <a href="#projects" class="btn">Zobacz moje projekty</a>
             </div>
         </section>
 
@@ -40,8 +42,8 @@
                 <h2>O mnie</h2>
                 <div class="about-content">
                     <div class="about-text">
-                        <p>Jestem pasjonatem testowania oprogramowania, specjalizującym się w automatyzacji testów. Moje projekty skupiają się na poprawie jakości aplikacji webowych.</p>
-                        <p>Z doświadczeniem w różnych narzędziach i frameworkach, staram się ciągle rozwijać i podnosić swoje umiejętności w dziedzinie testowania.</p>
+                        <p>Jestem pasjonatem testowania oprogramowania z doświadczeniem w automatyzacji testów. Moje projekty koncentrują się na poprawie jakości aplikacji webowych i zapewnieniu najlepszych doświadczeń użytkownika.</p>
+                        <p>Z biegłością w różnych narzędziach i frameworkach, stale rozwijam swoje umiejętności w dziedzinie testowania i jakości oprogramowania.</p>
                     </div>
                     <div class="skills">
                         <h3>Umiejętności</h3>
@@ -52,6 +54,8 @@
                             <li>TestNG</li>
                             <li>Cucumber</li>
                             <li>Jenkins</li>
+                            <li>Git</li>
+                            <li>JIRA</li>
                         </ul>
                     </div>
                 </div>
@@ -63,28 +67,28 @@
                 <h2>Moje projekty</h2>
                 <div class="project-grid">
                     <div class="project-card">
-                        <div class="project-image" style="background-image: url('https://source.unsplash.com/random/400x300?technology')"></div>
+                        <img src="https://via.placeholder.com/300x200" alt="Facebook Login Tests">
                         <h3>Facebook Login Tests</h3>
-                        <p>Automatyzacja testów logowania do Facebooka.</p>
-                        <a href="https://github.com/milekv/facebook-login-tests" target="_blank" class="btn">Zobacz projekt</a>
+                        <p>Automatyzacja testów logowania do Facebooka z wykorzystaniem Selenium i Python.</p>
+                        <a href="https://github.com/milekv/facebook-login-tests" class="btn" target="_blank">Zobacz projekt</a>
                     </div>
                     <div class="project-card">
-                        <div class="project-image" style="background-image: url('https://source.unsplash.com/random/400x300?code')"></div>
+                        <img src="https://via.placeholder.com/300x200" alt="UI Test Project">
                         <h3>UI Test Project</h3>
-                        <p>Projekt testów interfejsu użytkownika.</p>
-                        <a href="https://github.com/milekv/ui_test_project" target="_blank" class="btn">Zobacz projekt</a>
+                        <p>Kompleksowy projekt testów interfejsu użytkownika z wykorzystaniem Java i TestNG.</p>
+                        <a href="https://github.com/milekv/ui_test_project" class="btn" target="_blank">Zobacz projekt</a>
                     </div>
                     <div class="project-card">
-                        <div class="project-image" style="background-image: url('https://source.unsplash.com/random/400x300?computer')"></div>
+                        <img src="https://via.placeholder.com/300x200" alt="Advanced Web Application Testing">
                         <h3>Advanced Web Application Testing</h3>
-                        <p>Zaawansowane testy aplikacji webowych.</p>
-                        <a href="https://github.com/milekv/Advanced-Web-Application-Testing" target="_blank" class="btn">Zobacz projekt</a>
+                        <p>Zaawansowane testy aplikacji webowych z użyciem Cucumber i Jenkins.</p>
+                        <a href="https://github.com/milekv/Advanced-Web-Application-Testing" class="btn" target="_blank">Zobacz projekt</a>
                     </div>
                     <div class="project-card">
-                        <div class="project-image" style="background-image: url('https://source.unsplash.com/random/400x300?programming')"></div>
+                        <img src="https://via.placeholder.com/300x200" alt="Web Application Testing">
                         <h3>Web Application Testing</h3>
-                        <p>Podstawowe testy aplikacji webowych.</p>
-                        <a href="https://github.com/milekv/Web-Application-Testing" target="_blank" class="btn">Zobacz projekt</a>
+                        <p>Podstawowe testy aplikacji webowych z wykorzystaniem różnych technik i narzędzi.</p>
+                        <a href="https://github.com/milekv/Web-Application-Testing" class="btn" target="_blank">Zobacz projekt</a>
                     </div>
                 </div>
             </div>
@@ -93,10 +97,10 @@
         <section id="contact" class="contact">
             <div class="container">
                 <h2>Kontakt</h2>
-                <form>
-                    <input type="text" placeholder="Imię" required>
-                    <input type="email" placeholder="Email" required>
-                    <textarea placeholder="Wiadomość" required></textarea>
+                <form id="contact-form">
+                    <input type="text" name="name" placeholder="Imię" required>
+                    <input type="email" name="email" placeholder="Email" required>
+                    <textarea name="message" placeholder="Wiadomość" required></textarea>
                     <button type="submit" class="btn">Wyślij</button>
                 </form>
             </div>
@@ -105,7 +109,7 @@
 
     <footer>
         <div class="container">
-            <p>&copy; 2023 Milek V. Wszystkie prawa zastrzeżone.</p>
+            <p>&copy; 2024 Milekv. Wszystkie prawa zastrzeżone.</p>
             <div class="social-icons">
                 <a href="#" target="_blank"><i class="fab fa-github"></i></a>
                 <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
