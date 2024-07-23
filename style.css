@@ -139,11 +139,13 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
+    color: white;
 }
 
 .about-text {
     flex: 1;
     margin-right: 50px;
+    color: white;
 }
 
 .skills {
