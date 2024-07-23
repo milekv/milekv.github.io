@@ -352,10 +352,13 @@ nav {
     border-right: .15em solid var(--accent-color);
     white-space: nowrap;
     margin: 0 auto;
-    letter-spacing: .15em;
+    letter-spacing: .05em; 
     animation: 
-      typing 4.5s steps(35, end),
+      typing 3.5s steps(30, end), 
       blink-caret .75s step-end infinite;
+    color: white; 
+    display: inline-block; 
+    max-width: 100%; 
 }
 
 @keyframes typing {
@@ -367,7 +370,6 @@ nav {
     from, to { border-color: transparent }
     50% { border-color: var(--accent-color); }
 }
-
 h2 {
     color: var(--primary-color);
 }
