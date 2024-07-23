@@ -354,7 +354,7 @@ nav {
     margin: 0 auto;
     letter-spacing: .15em;
     animation: 
-      typing 3.5s steps(40, end),
+      typing 4.5s steps(35, end),
       blink-caret .75s step-end infinite;
 }
 
