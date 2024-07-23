@@ -5,7 +5,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const navLinks = document.querySelectorAll('.nav-links li');
 
     burger.addEventListener('click', () => {
-        
         nav.classList.toggle('nav-active');
 
         navLinks.forEach((link, index) => {
@@ -16,11 +15,9 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
 
-        
         burger.classList.toggle('toggle');
     });
 
-    
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
             e.preventDefault();
@@ -31,11 +28,9 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    
     const form = document.getElementById('contact-form');
     form.addEventListener('submit', (e) => {
         e.preventDefault();
-        
         console.log('Form submitted');
         form.reset();
         alert('Dziękujemy za wiadomość! Skontaktuje się z Tobą wkrótce.');
@@ -86,10 +81,20 @@ document.addEventListener('DOMContentLoaded', () => {
 
     typeWriter(text);
 
-    
     const scrollToTopBtn = document.createElement('button');
     scrollToTopBtn.innerHTML = '&uarr;';
     scrollToTopBtn.setAttribute('id', 'scrollToTopBtn');
+    scrollToTopBtn.style.position = 'fixed';
+    scrollToTopBtn.style.bottom = '20px';
+    scrollToTopBtn.style.right = '20px';
+    scrollToTopBtn.style.display = 'none';
+    scrollToTopBtn.style.fontSize = '20px';
+    scrollToTopBtn.style.padding = '10px 15px';
+    scrollToTopBtn.style.backgroundColor = var(--primary-color);
+    scrollToTopBtn.style.color = '#fff';
+    scrollToTopBtn.style.border = 'none';
+    scrollToTopBtn.style.borderRadius = '5px';
+    scrollToTopBtn.style.cursor = 'pointer';
     document.body.appendChild(scrollToTopBtn);
 
     scrollToTopBtn.addEventListener('click', () => {
@@ -106,15 +111,106 @@ document.addEventListener('DOMContentLoaded', () => {
             scrollToTopBtn.style.display = 'none';
         }
     });
-
-    
     const projectCards = document.querySelectorAll('.project-card');
     projectCards.forEach(card => {
         card.addEventListener('mouseover', () => {
             card.style.transform = 'scale(1.05)';
+            card.style.transition = 'all 0.3s ease-in-out';
         });
         card.addEventListener('mouseout', () => {
             card.style.transform = 'scale(1)';
         });
     });
+
+    // Dodajemy animację do sekcji przy scrollowaniu
+    const sections = document.querySelectorAll('section');
+    
+    const sectionObserver = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('section-animate');
+                observer.unobserve(entry.target);
+            }
+        });
+    }, {
+        threshold: 0.1
+    });
+
+    sections.forEach(section => {
+        sectionObserver.observe(section);
+    });
+
+    // Dodajemy efekt parallax do sekcji "O mnie"
+    const parallaxSection = document.querySelector('.parallax');
+    
+    window.addEventListener('scroll', () => {
+        let offset = window.pageYOffset;
+        parallaxSection.style.backgroundPositionY = offset * 0.7 + 'px';
+    });
+
+    // Dodajemy animację liczb w sekcji umiejętności
+    const skillItems = document.querySelectorAll('.skills li');
+    
+    const animateValue = (obj, start, end, duration) => {
+        let startTimestamp = null;
+        const step = (timestamp) => {
+            if (!startTimestamp) startTimestamp = timestamp;
+            const progress = Math.min((timestamp - startTimestamp) / duration, 1);
+            obj.innerHTML = Math.floor(progress * (end - start) + start);
+            if (progress < 1) {
+                window.requestAnimationFrame(step);
+            }
+        };
+        window.requestAnimationFrame(step);
+    };
+
+    const skillObserver = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                skillItems.forEach((item, index) => {
+                    setTimeout(() => {
+                        animateValue(item, 0, 100, 2000);
+                    }, index * 200);
+                });
+                observer.unobserve(entry.target);
+            }
+        });
+    }, {
+        threshold: 0.5
+    });
+
+    skillObserver.observe(document.querySelector('.skills'));
+
+    // Dodajemy animację do formularza kontaktowego
+    const contactForm = document.querySelector('#contact-form');
+    const formInputs = contactForm.querySelectorAll('input, textarea');
+
+    formInputs.forEach(input => {
+        input.addEventListener('focus', () => {
+            input.parentElement.classList.add('focused');
+        });
+
+        input.addEventListener('blur', () => {
+            if (input.value === '') {
+                input.parentElement.classList.remove('focused');
+            }
+        });
+    });
+
+    // Dodajemy efekt przewijania do nawigacji
+    const navItems = document.querySelectorAll('.nav-links a');
+
+    navItems.forEach(item => {
+        item.addEventListener('click', (e) => {
+            e.preventDefault();
+            const targetId = item.getAttribute('href');
+            const targetSection = document.querySelector(targetId);
+            
+            window.scrollTo({
+                top: targetSection.offsetTop - 100,
+                behavior: 'smooth'
+            });
+        });
+    });
 });
+    
