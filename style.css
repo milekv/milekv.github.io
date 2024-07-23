@@ -382,9 +382,8 @@ section::before {
     }
 }
 
-/* Dodatkowe style dla lepszego wyglądu na urządzeniach mobilnych */
-@media screen and (max-width: 600px) {
-    .typing-effect {
+@media screen and (max-width: 480px) {
+    .hero h2 {
         font-size: 2rem;
     }
 
@@ -392,15 +391,97 @@ section::before {
         font-size: 1rem;
     }
 
-    .about-content {
-        padding: 0 20px;
+    .btn {
+        padding: 10px 20px;
+        font-size: 0.9rem;
     }
 
-    .project-card h3 {
-        font-size: 1.5rem;
+    .project-card {
+        padding: 15px;
     }
 
-    .project-card p {
-        font-size: 1rem;
+    .contact form {
+        padding: 0 15px;
     }
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+.fa-selenium:before {
+    content: "\f3b8"; 
+    font-family: "Font Awesome 5 Brands";
+}
+
+@media screen and (max-width: 768px) {
+    .nav-links {
+        padding-top: 70px; 
+    }
+
+    .footer-logo {
+        position: static;
+        margin-bottom: 15px;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .burger {
+        position: absolute;
+        top: 15px;
+        right: 15px;
+    }
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.project-card, .contact form {
+    background-color: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(10px);
+}
+
+.skills li {
+    color: var(--text-color);
+}
+
+.contact input,
+.contact textarea {
+    background-color: rgba(255, 255, 255, 0.8);
+    color: var(--text-color);
+}
+
+p {
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.about {
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+
+.glass-footer {
+    background-color: rgba(44, 62, 80, 0.9);
+    color: #fff;
+}
+
+.glass-footer .social-icons a {
+    color: #fff;
+}
+
+.glass-footer .social-icons a:hover {
+    color: var(--accent-color);
 }
