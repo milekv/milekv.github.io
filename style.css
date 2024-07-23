@@ -356,7 +356,7 @@ nav {
     letter-spacing: .05em; 
     animation: 
       typing 3.5s steps(30, end), 
-      blink-caret .75s step-end infinite;
+      
     color: white; 
     display: inline-block; 
     max-width: 100%; 
