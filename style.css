@@ -9,25 +9,8 @@
     --home-about-gradient: linear-gradient(to right, #4e54c8, #8f94fb);
     --glass-bg: rgba(255, 255, 255, 0.1);
     --glass-border: rgba(255, 255, 255, 0.2);
-    --dark-bg-color: #121212;
-    --dark-card-bg-color: #1e1e1e;
-    --dark-text-color: #e4e4e4;
 }
 
-body.dark-mode {
-    background: var(--dark-bg-color);
-    color: var(--dark-text-color);
-}
-
-body.dark-mode .project-card {
-    background: var(--dark-card-bg-color);
-}
-
-body.dark-mode header,
-body.dark-mode footer {
-    background: var(--dark-card-bg-color);
-    color: var(--dark-text-color);
-}
 
 
 * {
