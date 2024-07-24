@@ -105,6 +105,10 @@ nav {
 .hero p {
     font-size: 1.2rem;
     margin-bottom: 30px;
+    max-width: 800px; 
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.6;
 }
 
 .btn {
@@ -179,11 +183,12 @@ nav {
 }
 
 .project-card {
-    background-color: var(--card-bg-color);
+    background-color: rgba(255, 255, 255, 0.1);
     border-radius: 10px;
     padding: 20px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
+    color: white;
 }
 
 .project-card:hover {
@@ -191,8 +196,13 @@ nav {
 }
 
 .project-card h3 {
-    color: var(--primary-color);
+    color: white;
     margin-bottom: 10px;
+}
+#projects .container, #contact .container {
+    background-color: rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 10px;
 }
 
 .contact form {
