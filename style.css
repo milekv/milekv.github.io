@@ -88,7 +88,7 @@ nav {
     display: inline-block;
 }
 
-.hero, .about {
+.hero, .about, #projects, #contact {
     padding: 150px 0 100px;
     text-align: center;
     color: #fff;
@@ -131,7 +131,6 @@ nav {
     transform: translateY(-2px);
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
-
 .about-content {
     display: flex;
     justify-content: space-between;
@@ -195,10 +194,10 @@ nav {
     transform: translateY(-5px);
 }
 
-.project-card h3 {
+.project-card h3, .project-card p {
     color: white;
-    margin-bottom: 10px;
 }
+
 #projects .container, #contact .container {
     background-color: rgba(0, 0, 0, 0.1);
     padding: 20px;
@@ -213,7 +212,7 @@ nav {
     background-color: rgba(255, 255, 255, 0.9);
     backdrop-filter: blur(10px);
     padding: 30px;
-    border-radius: 20px;  /* Zwiększone zaokrąglenie rogów */
+    border-radius: 20px;
 }
 
 .contact input,
@@ -270,7 +269,6 @@ nav {
     margin: 5px;
     transition: all 0.3s ease;
 }
-
 #scrollToTopBtn {
     position: fixed;
     bottom: 20px;
@@ -308,6 +306,21 @@ nav {
 .fa-selenium:before {
     content: "\f3b8"; 
     font-family: "Font Awesome 5 Brands";
+}
+
+section h2 {
+    color: white;
+    margin-bottom: 30px;
+}
+
+#home, #about, #projects, #contact {
+    color: white;
+}
+
+#home .container, #about .container, #projects .container, #contact .container {
+    background-color: rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 10px;
 }
 
 @media screen and (max-width: 768px) {
@@ -383,14 +396,4 @@ nav {
     .contact form {
         padding: 20px;
     }
-}
-
-#home, #about {
-    color: white;
-}
-
-#home .container, #about .container {
-    background-color: rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    border-radius: 10px;
 }
