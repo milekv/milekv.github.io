@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', () => {
         burger.classList.toggle('toggle');
     });
 
-    // Smooth scroll for anchor links
+   
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
             e.preventDefault();
@@ -27,16 +27,16 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // Contact form submission handling
+   
     const form = document.getElementById('contact-form');
     form.addEventListener('submit', (e) => {
         e.preventDefault();
         console.log('Form submitted');
         form.reset();
-        alert('Dziękujemy za wiadomość! Skontaktuje się z Tobą wkrótce.');
+        alert('Dziękuje za wiadomość! Skontaktuje się z Tobą wkrótce.');
     });
 
-    // Intersection Observer for fade-in effects
+    
     const faders = document.querySelectorAll('.fade-in');
     const sliders = document.querySelectorAll('.slide-in');
 
@@ -67,7 +67,7 @@ document.addEventListener('DOMContentLoaded', () => {
         appearOnScroll.observe(slider);
     });
 
-    // Typewriter effect for hero text
+    
     const heroText = document.querySelector('.hero h2');
     const text = heroText.textContent;
     heroText.textContent = '';
@@ -82,7 +82,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     typeWriter(text);
 
-    // Scroll to top button
+    
     const scrollToTopBtn = document.createElement('button');
     scrollToTopBtn.innerHTML = '&uarr;';
     scrollToTopBtn.setAttribute('id', 'scrollToTopBtn');
@@ -114,7 +114,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    // Project card hover effects
+    
     const projectCards = document.querySelectorAll('.project-card');
     projectCards.forEach(card => {
         card.addEventListener('mouseover', () => {
@@ -125,7 +125,7 @@ document.addEventListener('DOMContentLoaded', () => {
             card.style.transform = 'scale(1)';
         });
 
-        // Add flip effect on hover
+        
         card.addEventListener('mouseenter', () => {
             card.classList.add('flip');
         });
@@ -134,7 +134,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // Section scroll animations
+   
     const sections = document.querySelectorAll('section');
 
     const sectionObserver = new IntersectionObserver((entries, observer) => {
@@ -152,7 +152,7 @@ document.addEventListener('DOMContentLoaded', () => {
         sectionObserver.observe(section);
     });
 
-    // Parallax effect for "About Me" section
+    
     const parallaxSection = document.querySelector('.parallax');
 
     window.addEventListener('scroll', () => {
@@ -160,7 +160,7 @@ document.addEventListener('DOMContentLoaded', () => {
         parallaxSection.style.backgroundPositionY = offset * 0.7 + 'px';
     });
 
-    // Animated progress bars for skills
+    
     const skillItems = document.querySelectorAll('.skills li');
 
     skillItems.forEach(item => {
@@ -197,7 +197,7 @@ document.addEventListener('DOMContentLoaded', () => {
         skillObserver.observe(item);
     });
 
-    // Contact form animation
+    
     const contactForm = document.querySelector('#contact-form');
     const formInputs = contactForm.querySelectorAll('input, textarea');
 
@@ -213,7 +213,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // Smooth scroll for navigation links
+    
     const navItems = document.querySelectorAll('.nav-links a');
 
     navItems.forEach(item => {
