@@ -1,17 +1,15 @@
 :root {
-    --primary-color: #6a11cb;
-    --secondary-color: #2575fc;
-    --accent-color: #e74c3c;
-    --text-color: #333;
-    --bg-color: #f4f4f4;
-    --card-bg-color: #ffffff;
-    --gradient: linear-gradient(45deg, #6a11cb, #2575fc);
-    --home-about-gradient: linear-gradient(to right, #4e54c8, #8f94fb);
-    --glass-bg: rgba(255, 255, 255, 0.1);
+    --primary-color: #e74c3c; /* Red */
+    --secondary-color: #c0392b; /* Darker Red */
+    --accent-color: #f39c12; /* Orange */
+    --text-color: #ffffff; /* White */
+    --bg-color: #2c3e50; /* Dark Background */
+    --card-bg-color: #34495e; /* Darker Card Background */
+    --gradient: linear-gradient(45deg, #e74c3c, #c0392b);
+    --home-about-gradient: linear-gradient(to right, #333, #e74c3c);
+    --glass-bg: rgba(0, 0, 0, 0.5); /* Darker Glass Effect */
     --glass-border: rgba(255, 255, 255, 0.2);
 }
-
-
 
 * {
     margin: 0;
@@ -23,7 +21,7 @@ body, html {
     font-family: 'Roboto', sans-serif;
     line-height: 1.6;
     color: var(--text-color);
-    background: var(--gradient);
+    background: var(--bg-color);
     min-height: 100vh;
     overflow-x: hidden;
     scroll-behavior: smooth;
@@ -128,7 +126,7 @@ nav {
 
 .about {
     padding: 4rem 0;
-    background: #fff;
+    background: #34495e; /* Darker background for about section */
     color: var(--text-color);
 }
 
@@ -180,14 +178,13 @@ nav {
 
 .projects {
     padding: 4rem 0;
-    background: var(--bg-color);
+    background: #2c3e50; /* Darker background for projects section */
 }
 
 .projects h2 {
     text-align: center;
     margin-bottom: 2rem;
     font-size: 2.5rem;
-    color: var(--text-color);
 }
 
 .project-grid {
@@ -200,8 +197,8 @@ nav {
     background: var(--card-bg-color);
     padding: 2rem;
     border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s, background 0.3s;
 }
 
 .project-card h3 {
@@ -218,11 +215,12 @@ nav {
 
 .project-card:hover {
     transform: translateY(-10px);
+    background: var(--secondary-color); /* Darker background on hover */
 }
 
 .contact {
     padding: 4rem 0;
-    background: #fff;
+    background: #34495e; /* Darker background for contact section */
 }
 
 .contact h2 {
