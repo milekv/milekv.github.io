@@ -199,6 +199,10 @@ nav {
     border-radius: 10px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
     transition: transform 0.3s, background 0.3s;
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Stack the contents vertically */
+    justify-content: space-between; /* Space out the children */
+    min-height: 250px; /* Set a minimum height */
 }
 
 .project-card h3 {
@@ -211,6 +215,7 @@ nav {
     margin-bottom: 1.5rem;
     font-size: 1rem;
     color: var(--text-color);
+    flex-grow: 1; /* Allow the paragraph to grow and fill space */
 }
 
 .project-card:hover {
