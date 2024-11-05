@@ -1,13 +1,13 @@
 :root {
-    --primary-color: #e74c3c; /* Red */
-    --secondary-color: #c0392b; /* Darker Red */
-    --accent-color: #f39c12; /* Orange */
-    --text-color: #ffffff; /* White */
-    --bg-color: #2c3e50; /* Dark Background */
-    --card-bg-color: #34495e; /* Darker Card Background */
+    --primary-color: #e74c3c; 
+    --secondary-color: #c0392b; 
+    --accent-color: #f39c12;
+    --text-color: #ffffff;
+    --bg-color: #2c3e50; 
+    --card-bg-color: #34495e; 
     --gradient: linear-gradient(45deg, #e74c3c, #c0392b);
     --home-about-gradient: linear-gradient(to right, #333, #e74c3c);
-    --glass-bg: rgba(0, 0, 0, 0.5); /* Darker Glass Effect */
+    --glass-bg: rgba(0, 0, 0, 0.5); 
     --glass-border: rgba(255, 255, 255, 0.2);
 }
 
@@ -126,7 +126,7 @@ nav {
 
 .about {
     padding: 4rem 0;
-    background: #34495e; /* Darker background for about section */
+    background: #34495e; 
     color: var(--text-color);
 }
 
@@ -178,7 +178,7 @@ nav {
 
 .projects {
     padding: 4rem 0;
-    background: #2c3e50; /* Darker background for projects section */
+    background: #2c3e50; 
 }
 
 .projects h2 {
@@ -199,10 +199,10 @@ nav {
     border-radius: 10px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
     transition: transform 0.3s, background 0.3s;
-    display: flex; /* Use flexbox for layout */
-    flex-direction: column; /* Stack the contents vertically */
-    justify-content: space-between; /* Space out the children */
-    min-height: 250px; /* Set a minimum height */
+    display: flex; 
+    flex-direction: column; 
+    justify-content: space-between; 
+    min-height: 250px; 
 }
 
 .project-card h3 {
@@ -215,17 +215,17 @@ nav {
     margin-bottom: 1.5rem;
     font-size: 1rem;
     color: var(--text-color);
-    flex-grow: 1; /* Allow the paragraph to grow and fill space */
+    flex-grow: 1; 
 }
 
 .project-card:hover {
     transform: translateY(-10px);
-    background: var(--secondary-color); /* Darker background on hover */
+    background: var(--secondary-color);
 }
 
 .contact {
     padding: 4rem 0;
-    background: #34495e; /* Darker background for contact section */
+    background: #34495e; 
 }
 
 .contact h2 {
