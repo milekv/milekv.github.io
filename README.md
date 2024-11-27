@@ -1,21 +1,21 @@
-# milekv Portfolio
+# Portfolio milekv
 
-Welcome to my personal portfolio website! This repository contains the source code for my portfolio, which is hosted on GitHub Pages. The website showcases my skills, projects, and contact information. Feel free to explore and reach out if you have any questions or opportunities.
+Witamy w moim portfolio. To repozytorium to kod źródłowy mojej strony portfolio, która jest hostowana na GitHub Pages.
 
-## Features
-- Responsive Design: Adapts to any screen size for an optimal viewing experience.
-- Typing Effect: Engaging introduction with a typing effect.
-- Interactive Navigation: Smooth scrolling and navigation.
-- Projects Showcase: Display of my latest projects with descriptions and links.
-- Skills Highlight: A section dedicated to showcasing my technical skills.
-- Contact Form: A simple and effective way to reach out to me.
-- Smooth Animations: Subtle animations for a modern look.
+## Funkcje
+- **Responsywny Design**: Dostosowuje się do każdego rozmiaru ekranu, zapewniając optymalne wrażenia podczas przeglądania.
+- **Efekt Pisania**: Atrakcyjne wprowadzenie z efektem pisania.
+- **Interaktywna Nawigacja**: Płynne przewijanie i intuicyjna nawigacja.
+- **Prezentacja Projektów**: Wyświetlanie moich najnowszych projektów z opisami i linkami.
+- **Wyróżnienie Umiejętności**: Sekcja poświęcona prezentacji moich umiejętności technicznych.
+- **Formularz Kontaktowy**: Prosty i skuteczny sposób na nawiązanie kontaktu.
+- **Płynne Animacje**: Subtelne animacje, które nadają nowoczesny wygląd.
 
-## Technologies
+## Technologie
 - HTML5
 - CSS3
 - JavaScript
 - GitHub Pages
 
-To view the live site, simply visit: 
-https://milekv.github.io/
+## Aby zobaczyć stronę, odwiedź:  
+[https://milekv.github.io/](https://milekv.github.io/)
