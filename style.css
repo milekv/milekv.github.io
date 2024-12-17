@@ -1,4 +1,4 @@
-//*:root {
+:root {
     --primary-color: #e74c3c; 
     --secondary-color: #c0392b; 
     --accent-color: #f39c12;
@@ -9,19 +9,8 @@
     --home-about-gradient: linear-gradient(to right, #333, #e74c3c);
     --glass-bg: rgba(0, 0, 0, 0.5); 
     --glass-border: rgba(255, 255, 255, 0.2);
-}*//
-:root {
-    --primary-color: #9b59b6; 
-    --secondary-color: #8e44ad; 
-    --accent-color: #00cec9;
-    --text-color: #ecf0f1;
-    --bg-color: #1c1c1e; 
-    --card-bg-color: #2d3436; 
-    --gradient: linear-gradient(135deg, #9b59b6, #8e44ad);
-    --home-about-gradient: linear-gradient(to right, #2c3e50, #4facfe);
-    --glass-bg: rgba(0, 0, 0, 0.6); 
-    --glass-border: rgba(255, 255, 255, 0.3);
 }
+
 * {
     margin: 0;
     padding: 0;
