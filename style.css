@@ -77,6 +77,29 @@ nav {
   background-color: var(--primary-color);
   transform: scale(1.1);
 }
+/* Animacja menu burger */
+.burger div {
+  transition: all 0.3s ease;
+}
+
+.burger.toggle div:nth-child(1) {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.burger.toggle div:nth-child(2) {
+  opacity: 0;
+}
+
+.burger.toggle div:nth-child(3) {
+  transform: rotate(45deg) translate(-5px, -6px);
+}
+
+/* Menu burger aktywne */
+.nav-links.nav-active {
+  transform: translateX(0);
+  transition: transform 0.5s ease;
+}
+
 
 /* Footer */
 footer {
