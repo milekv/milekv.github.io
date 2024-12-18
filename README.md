@@ -1,6 +1,6 @@
 # Portfolio milekv
 
-Witamy w moim portfolio. To repozytorium to kod źródłowy mojej strony portfolio, która jest hostowana na GitHub Pages.
+Witam w moim portfolio. To repozytorium to kod źródłowy mojego  portfolio.
 
 ## Funkcje
 - **Responsywny Design**: Dostosowuje się do każdego rozmiaru ekranu, zapewniając optymalne wrażenia podczas przeglądania.
