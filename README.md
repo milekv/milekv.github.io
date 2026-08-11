@@ -1,21 +1,30 @@
-# Portfolio milekv
+# milekv.github.io
 
-Witam w moim portfolio. To repozytorium to kod źródłowy mojego  portfolio.
+Source for [milekv.github.io](https://milekv.github.io/).
 
-## Funkcje
-- **Responsywny Design**: Dostosowuje się do każdego rozmiaru ekranu, zapewniając optymalne wrażenia podczas przeglądania.
-- **Efekt Pisania**: Atrakcyjne wprowadzenie z efektem pisania.
-- **Interaktywna Nawigacja**: Płynne przewijanie i intuicyjna nawigacja.
-- **Prezentacja Projektów**: Wyświetlanie moich najnowszych projektów z opisami i linkami.
-- **Wyróżnienie Umiejętności**: Sekcja poświęcona prezentacji moich umiejętności technicznych.
-- **Formularz Kontaktowy**: Prosty i skuteczny sposób na nawiązanie kontaktu.
-- **Płynne Animacje**: Subtelne animacje, które nadają nowoczesny wygląd.
+The site presents selected work across developer tools, backend systems and database applications. Project imagery comes from the applications themselves.
 
-## Technologie
-- HTML5
-- CSS3
-- JavaScript
-- GitHub Pages
+## Local development
 
-## Aby zobaczyć stronę, odwiedź:  
-[https://milekv.github.io/](https://milekv.github.io/)
+Requirements:
+
+- Node.js 20.19 or newer
+- npm
+
+```bash
+npm install
+npm run dev
+```
+
+The development server prints its local URL after startup.
+
+## Checks
+
+```bash
+npm run lint
+npm run typecheck
+npm run build
+npm audit
+```
+
+The site is built with React, TypeScript and Vite. It supports light and dark themes, responsive layouts and reduced-motion preferences.
